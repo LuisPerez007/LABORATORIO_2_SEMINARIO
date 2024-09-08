@@ -1,0 +1,20 @@
+Interpolación de expresiones:
+    Los "template strings" permiten incrustar expresiones directamente dentro de una cadena de texto usando la sintaxis ${expresión}.
+Multilínea:
+    Con "template strings", puedes escribir cadenas de texto que abarquen varias líneas sin necesidad de concatenarlas con + o \n para los saltos de línea.
+Incorporación de variables y expresiones:
+    Además de variables, también puedes incrustar cualquier expresión de JavaScript dentro de un "template string".
+    const a = 5;
+    const b = 10;
+    console.log(`The result of ${a} + ${b} is ${a + b}`);
+    // Output: The result of 5 + 10 is 15
+
+Diferencias con comillas simples y dobles:
+    Comillas simples (') y dobles (")
+        Necesitan la concatenación explícita de cadenas y variables usando el operador +.
+        No permiten escribir texto en múltiples líneas directamente.
+        No soportan la interpolación de variables o expresiones sin concatenación.
+    Comillas invertidas (`)
+        Permiten interpolación de variables y expresiones con ${}.
+        Soportan texto en múltiples líneas directamente.
+        Hacen el código más legible y fácil de mantener.

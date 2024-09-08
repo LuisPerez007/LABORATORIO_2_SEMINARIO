@@ -1,0 +1,41 @@
+CARACTERÍSTICA:
+Tipos Estáticos: TypeScript permite definir tipos para variables, funciones y objetos. Esto ayuda a detectar errores en tiempo de desarrollo y proporciona una mayor claridad en el código.
+let name: string = 'Alice';
+let age: number = 30;
+
+Inferencia de Tipos: TypeScript puede inferir tipos automáticamente en base a los valores asignados, proporcionando una experiencia de desarrollo más flexible sin necesidad de especificar todos los tipos explícitamente.
+Interfaces y Tipos: TypeScript permite definir interfaces y tipos personalizados para estructurar mejor el código y mejorar la reutilización.
+interface Person {
+    name: string;
+    age: number;
+}
+
+Clases y Objetos: TypeScript soporta clases con sintaxis moderna similar a la de otros lenguajes orientados a objetos, proporcionando características como herencia, métodos y propiedades.
+Decoradores: TypeScript soporta decoradores que permiten añadir metadatos a clases, métodos y propiedades, útil para frameworks como Angular.
+Modularidad: TypeScript soporta módulos ES6, facilitando la importación y exportación de componentes en aplicaciones grandes.
+export class User { ... }
+import { User } from './user';
+
+Generics: TypeScript soporta generics, permitiendo escribir funciones y clases que funcionan con múltiples tipos de datos mientras se mantiene la seguridad de tipos.
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+
+DIFERENCIA:
+
+Tipos Estáticos vs. Dinámicos:
+    TypeScript: Tipado estático. Permite definir tipos y proporciona verificación en tiempo de compilación.
+    JavaScript: Tipado dinámico. Los tipos son determinados en tiempo de ejecución, lo que puede llevar a errores inesperados.
+Compilación:
+    TypeScript: Se compila a JavaScript antes de ejecutarse. El código TypeScript no se puede ejecutar directamente en el navegador o en Node.js.
+    JavaScript: No requiere compilación; se ejecuta directamente en el navegador o en el entorno de ejecución.
+Sintaxis Adicional:
+    TypeScript: Incluye características adicionales como interfaces, tipos y decoradores que no están presentes en JavaScript.
+    JavaScript: Solo soporta la sintaxis estándar del lenguaje ECMAScript.
+Detección de Errores:
+    TypeScript: Proporciona detección de errores en tiempo de desarrollo debido a su sistema de tipos, lo que puede ayudar a evitar errores comunes antes de ejecutar el código.
+    JavaScript: Los errores de tipo y otros problemas solo se detectan en tiempo de ejecución.
+Interoperabilidad:
+    TypeScript: Puede interoperar con código JavaScript existente y librerías. TypeScript puede usar cualquier librería JavaScript mediante definiciones de tipo (.d.ts).
+    JavaScript: No tiene una forma incorporada de manejar definiciones de tipo o interfaces
